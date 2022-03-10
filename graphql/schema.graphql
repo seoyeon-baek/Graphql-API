@@ -1,9 +1,10 @@
-type Seoyeon {
+type Person {
   name: String!
   age: Int!
   gender: String!
 }
 
 type Query {
-  person: Seoyeon!
+  people: [Person]!
+  person(id: Int!): Person
 }
